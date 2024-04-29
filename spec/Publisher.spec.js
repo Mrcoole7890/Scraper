@@ -1,4 +1,4 @@
-var Publishers = require('../Publisher.js');
+var Publishers = require('../publisher.js');
 const dotenv = require('dotenv').config();
 
 describe("Testing suite for the publisher file", function() {
