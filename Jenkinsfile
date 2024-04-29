@@ -6,9 +6,6 @@ pipeline {
     }
 
   }
-  parameters {
-    base64File 'envFile'
-  }
   stages {
     stage('build') {
       steps {
