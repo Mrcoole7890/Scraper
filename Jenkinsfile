@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh 'npm install'
         sh 'touch .env'
-        sh 'cat "$ENV_FILE" >> .env'
+        sh 'cat "$ENV_FILE" > .env'
       }
     }
 
