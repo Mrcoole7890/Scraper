@@ -15,6 +15,9 @@ pipeline {
 
     stage('Test') {
       steps {
+        withFileParameter('envFile') {
+          sh 'cat $envFile'
+        }
         sh 'npm test'
       }
     }
