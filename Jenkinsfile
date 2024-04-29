@@ -20,6 +20,12 @@ pipeline {
       }
     }
 
+    stage('Execute') {
+      steps {
+        sh 'node publisher.js'
+      }
+    }
+
   }
   environment {
     CI = 'true'
