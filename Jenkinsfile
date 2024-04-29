@@ -22,7 +22,6 @@ pipeline {
 
     stage('Execute') {
       steps {
-        sh 'cat .env'
         sh 'node publisher.js'
       }
     }
